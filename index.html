@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RRV Profile</title><style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 93vh;
+      margin-top: 3vh;
+      background: divghtgray;
+    }
+    #root {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0;
+    }
+    header {
+      width: 100%;
+      height: auto;
+      background: purple;
+    }
+    .title {
+      color: white;
+      padding-left: 3%;
+    }
+    main {
+      width: 90%;
+      height: calc(100% - 3.34em);
+      background: white;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5%;
+    }
+    .toc {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 10px;
+    }
+    .profile_picture {
+      width: 100%;
+      height: auto;
+    }
+    .toc_menu {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      flex-wrap: nowrap;
+      gap: 5px;
+    }
+    .toc_menu_item {
+      background-color: rgb(181, 181, 207);
+      padding-left: 5px;
+    }
+    .toc_menu_item_active {
+      background-color: rgb(240, 184, 241);
+    }
+    .toc_menu_item {
+      border: 0;
+      font-size: 1rem;
+      text-align: center;
+    }
+    .toc_menu_item:hover {
+      box-shadow:
+        inset -1px -1px 2px rgba(255, 255, 255, 0.6),
+        inset 1px 1px 11px rgba(129, 129, 129, 0.6);
+      cursor: pointer;
+    }
+    .toc_menu_item:active {
+      box-shadow:
+        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+    .content {
+      width: 75%;
+      height: 100%;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+      gap: 10px;
+    }
+    .profile_name > h1 {
+      margin-block-end: 0;
+    }
+    .profile_description {
+      width: 100%;
+    }
+    .description_heading {
+      background-color: rgb(181, 181, 207);
+      text-align: start;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    .description_title {
+      width: 30%;
+      color: darkgray;
+      vertical-align: baseline;
+      font-size: 1.1em;
+    }
+    .description_content {
+      vertical-align: baseline;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <header><h1 class="title">Netfriends Worldwide</h1></header>
+    <main>
+      <div class="toc">
+       <img class="profile_picture" src="/assets/images/dale_profile.jpg" alt="dale_profile" />
+       <div class="toc_menu">
+        <button class="toc_menu_item" type="button">Wall</button>
+        <div class="toc_menu_item toc_menu_item_active">Profile</div>
+        <div class="toc_menu_item">Photos</div>
+        <div class="toc_menu_item">Notes</div>
+        <div class="toc_menu_item">Friends</div>
+       </div>
+      </div>
+      <div class="content">
+        <div class="profile_name"><h1>Dale Magnum</h1></div>
+          <table class="profile_description">
+            <tr>
+              <th colspan="2" class="description_heading">My profile</th>
+            </tr>
+            <tr>
+              <td class="description_title">Hometown</td>
+              <td class="description_content">I'm from US, I live in LA.</td>
+            </tr>
+            <tr>
+              <td class="description_title">Occupation</td>
+              <td class="description_content">I'm detective, I work for my self.</td>
+            </tr>
+            <tr>
+              <td class="description_title">Languages</td>
+              <td class="description_content">I speak English.</td>
+            </tr>
+          </table>
+        <table class="profile_description">
+          <tr>
+            <th colspan="2" class="description_heading">Interests</th>
+          </tr>
+          <tr>
+            <td class="description_title">Music</td>
+            <td class="description_content">I like metal and rock genres of music.</td>
+          </tr>
+          <tr>
+            <td class="description_title">Films</td>
+            <td class="description_content">I like science fiction, detective, adventure films, e.g. Expanse, Detective Magnum, Chip 'n' Dale - Rescue Rangers, Indiana Jones.</td>
+          </tr>
+          <tr>
+            <td class="description_title">TV</td>
+            <td class="description_content">I don't like watch TV.</td>
+          </tr>
+          <tr>
+            <td class="description_title">Sport</td>
+            <td class="description_content">I play basketball and ride a bicycle.</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
